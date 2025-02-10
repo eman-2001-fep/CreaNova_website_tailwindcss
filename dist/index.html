@@ -2,17 +2,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>CreaNova</title>
 </head>
-<body class="bg-[#F3F3F3] px-20 py-5">
+<body class="bg-[#F3F3F3] px-4 md:px-20 py-5">
   <!-- Navbar -->
   <header>
-    <nav class="flex flex-col md:flex-col lg:flex-row items-center justify-center gap-7">
+    <nav class="flex flex-col lg:flex-row items-center justify-between gap-4 md:gap-7">
       <!-- Logo -->
-      <div class="text-xl font-bold mr-12">
+      <div class="text-xl font-bold mr-0 md:mr-12">
         <span class="text-[#FE5E54]">Crea</span><span class="text-[#312F2F]">Nova.</span>
       </div>
 
@@ -35,20 +35,20 @@
         <li><a href="#" class="hover:underline" aria-label="Blog">Blog</a></li>
         <li><a href="#" class="hover:underline" aria-label="Contact Us">Contact Us</a></li>
       </ul>
-      <div class="flex items-center text-nowrap">
-        <button class="bg-[#FE5E54] text-white p-1 rounded-full text-sm font-medium hover:bg-[#FE5E54] flex items-center gap-2" aria-label="Buy Template">
+      <div class="flex items-center text-nowrap mt-4 md:mt-0">
+        <button class="bg-[#FE5E54] text-white p-2 md:p-1 rounded-full text-sm font-medium hover:bg-[#FE5E54] flex items-center gap-2" aria-label="Buy Template">
           Buy Template 
-          <i class="fas fa-arrow-right text-2xl text-[#FE5E54] bg-[#312F2F] rounded-full p-5 w-8 h-8 flex items-center justify-center"></i>
+          <i class="fas fa-arrow-right text-2xl text-[#FE5E54] bg-[#312F2F] rounded-full p-2 md:p-5 w-8 h-8 flex items-center justify-center"></i>
         </button>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col-reverse lg:flex-row py-40 gap-4 justify-start items-center">
-    <div class="relative w-[60%] py-40 -right-24 mt-8">
-      <div class="absolute flex flex-col gap-2 max-w-3/2 bottom-[90%]">
-        <p class="font-extrabold text-4xl italic relative">89x
+  <section class="flex flex-col lg:flex-row py-20 md:py-40 gap-4 justify-start items-center">
+    <div class="relative w-full lg:w-[60%] py-20 md:py-40 lg:-right-24 mt-8 ml-10 sm:ml-0">
+      <div class="absolute flex flex-col gap-2 max-w-full bottom-[90%]">
+        <p class="font-extrabold text-3xl md:text-4xl italic relative">89x
           <span class="absolute bottom-0 left-0 right-0 w-[50%] h-[50%] bg-white opacity-80 blur-lg"></span>
         </p>
         <p class="font-[450]">Le’s build your next big idea CreaNova <br> a powerful Webflow Non Code</p>
@@ -59,23 +59,31 @@
         <p class="text-sm leading-6">Learn how to become <br>a sales machine</p>
         <button class="text-left font-medium text-sm underline">Learn more</button>
       </div>
-
       <img class="w-[80%] h-[60%]" src="images/Rectangle_2.png" alt="Background Image">
       <img class="absolute w-[75%] h-[60%] left-1/2 transform -translate-x-[60%] -translate-y-[100%]" src="images/phone.png" alt="Phone Image">
     </div>
-
-    <div class="relative w-[90%] pt-6 -left-6">
-      <h1 class="w-[90%] absolute left-32 transform -translate-x-[15%] -translate-y-[180%] text-4xl md:text-5xl lg:text-6xl text-nowrap text-[#312F2F] font-bold ">Grow Your Business <br>With Our Help</h1>
-      <p class="absolute left-10 -top-56 transform -translate-x-[15%] -translate-y-[100%] p-1 font-mono text-white rounded-full text-sm bg-[#FE5E54]">BUSINESS</p>
-      <img class="w-[85%] ml-12" src="images/Rectangle_1.png" alt="Background Image">
+    <div class="relative w-full lg:w-[90%] pt-6 ">
+      <button class="absolute px-2 top-4 left-8 md:left-16 font-bold text-white rounded-full text-sm bg-[#FE5E54]">
+        BUSINESS
+      </button>
+      <h1 class="w-full lg:w-[90%] absolute pr-14 left-16  sm:left-24 lg:left-32 mt-14 md:mt-8 transform -translate-x-[15%] -translate-y-[180%] text-3xl md:text-5xl lg:text-6xl text-nowrap mx-6 md:mx-0 text-[#312F2F] font-bold ">Grow Your Business <br>With Our Help</h1>
+      <img class="w-full lg:w-[85%] ml-0 lg:ml-12" src="images/Rectangle_1.png" alt="Background Image">
       <img class="absolute w-[35%] left-1/2 transform -translate-x-[20%] -translate-y-[100%]" src="images/person.png" alt="Person Image">
-      <div class="absolute flex flex-col gap-2 max-w-3/2 top-1/2 left-[15%]">
+      <div class="absolute flex flex-col gap-2 max-w-full top-20 sm:top-1/2 left-[15%]">
         <h1 class="font-semibold">Small Business</h1>
         <p class="text-sm leading-6 ">See how can we help<br> your business</p>
         <button class="text-left font-medium text-sm underline">Learn more</button>
       </div>
     </div>
   </section>
+
+  <!-- Services Section -->
+
+
+
+
+
+
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
