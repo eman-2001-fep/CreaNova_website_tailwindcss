@@ -5,6 +5,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+.clip-custom {
+  clip-path: polygon(0% 0%, 85% 0%, 100% 12%, 100% 100%, 0% 100%);
+  border-radius: 16px;
+}
+
+  </style>
+
   <title>CreaNova</title>
 </head>
 <body class="bg-[#F3F3F3]">
@@ -186,6 +194,7 @@
 
  </section>
  <!-- benefits section -->
+ <!-- benefits section -->
  <section class="bg-[#F5F5F5] min-h-screen py-12 px-6  md:px-30 ">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
     
@@ -194,9 +203,36 @@
       <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">CREATIVE</span>
       <h2 class="text-3xl font-bold">Our Rock and Roll</h2>
       <p class="text-[#939394]">We bring ideas to life by combining years of</p>
-      <img src="images/Frame 50.png" alt="">
+      <div class="relative flex flex-col items-center p-6">
+        <img src="images/Rectangle 32.png" alt="Background" class="w-full rounded-xl shadow-lg">
+    
+        <img src="images/guy.png" alt="Person" class="w-[70%] absolute -top-4">
+        
+        <div class="absolute left-4 bottom-16  sm:bottom-40 md:bottom-20 lg:bottom-32 w-[90%] md:w-full flex flex-col items-center">
+      
+          <!-- Expert Team Box -->
+          <div class="w-[80%] md:w-[310px] bg-[#312F2F] text-white p-4 rounded-xl flex items-center gap-4 ">
+            <img src="images/Mask group.png" alt="Icon" class="w-10 h-10">
+            <div>
+              <h3 class="font-bold">Expert Team</h3>
+              <p class="text-sm">Start free while you learn</p>
+            </div>
+          </div>
+    
+          <!-- Button -->
+          <button class="w-[80%] md:w-[310px] bg-[#312F2F] text-white py-3 mt-4 rounded-xl font-bold">
+            Try Us
+          </button>
+    
+        </div>
+      
+      
+      </div>
+    
+    
       
     </div>
+    
 
     <!-- Right Content -->
     <div class="space-y-6 pt-4 md:pt-80">
@@ -298,21 +334,40 @@
   </div>
 
   <div>
-    <!-- Feature 1 -->
-    <div>
-      <img src="images/feature_4.png" alt="Feature 1" class="w-full h-auto  text-center object-cover rounded-lg mb-6">
+    <div class="relative w-full  overflow-hidden rounded-[30px] [clip-path:polygon(0%_0%,85%_0%,90%_5%,100%_5%,100%_100%,0%_100%)]">
+      <img src="images/image_f4.png" 
+           class="w-full h-auto object-cover mb-8 " />
+     <p class="absolute bottom-14 left-3 transform translate-x-2 text-center px-6 py-5 w-auto h-auto bg-[#F5F5F5BF] text-[#312F2F] text-sm md:text-xl font-medium rounded-md ">Website Design for Digital Agency</p>
+      <p class="left-8 bg-[#312F2F80] rounded-full text-white font-medium text-sm border-white  border-1 px-2 top-5 absolute">WORKS</p>
     </div>
+    
+    
+    
 
     <!-- Feature 2 -->
-    <div class="flex  flex-col sm:flex-row gap-4 items-center">
-      <img src="images/feature_2.png" alt="Feature 2" class="w-[50%] h-auto object-cover rounded-lg mb-6">
-      <img src="images/feature_3.png" alt="Feature 3" class="w-[50%] h-auto object-cover rounded-lg mb-6">
+    <div class="flex  flex-col sm:flex-row gap-8 items-center">
+      <div class="relative">
+        <img src="images/image_f3.png" alt="Feature 2" class="w-full relative h-auto object-cover rounded-lg mb-6">
+        <p class="absolute bottom-14 left-16 right-16 transform translate-x-2 text-center px-6 py-5 w-auto h-auto bg-[#F5F5F5BF] text-[#312F2F] text-sm md:text-xl font-medium rounded-md ">Social Media Strategy for Restaurant</p>
+        <p class="left-8 bg-[#312F2F80] rounded-full text-white font-medium text-sm border-white  border-1 px-2 top-5 absolute">SOCIAL MEDIA</p>
+
+      </div>
+      <div class="relative">
+        <img src="images/image_f2.png" alt="Feature 2" class="w-full relative h-auto object-cover rounded-lg mb-6">
+        <p class="absolute bottom-14 left-16 right-16 transform translate-x-2 text-center px-6 py-5 w-auto h-auto bg-[#F5F5F5BF] text-[#312F2F] text-sm md:text-xl font-medium rounded-md ">Branding a New Startup</p>
+        <p class="left-8 bg-[#312F2F80] rounded-full text-white font-medium text-sm border-white  border-1 px-2 top-5 absolute">MARKETING</p>
+
+      </div>
     </div>
 
     <!-- Feature 4 -->
-    <div>
-      <img src="images/feature_1.png" alt="Feature 4" class="w-full h-auto object-cover rounded-lg mb-16">
+    <div class="relative w-full rounded-[30px]">
+      <img src="images/image_f1.png" 
+           class="w-full h-auto object-coverr rounded-2xl mb-8 " />
+     <p class="absolute bottom-8 right-6 transform translate-x-2 text-center px-6 py-5 w-auto h-auto bg-[#F5F5F5BF] text-[#312F2F] text-sm md:text-xl font-medium rounded-md ">Branding a Local Business</p>
+      <p class="right-8 bg-[#312F2F80] rounded-full text-white font-medium text-sm border-white  border-1 px-2 top-5 absolute">FINANCE</p>
     </div>
+    
   </div>
 </section>
 
